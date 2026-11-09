@@ -1,0 +1,36 @@
+name: 💡 Suggestion
+description: An idea for a new spaxer, enchantment, feature or tweak
+title: "[Suggestion] "
+labels: ["suggestion"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Got an idea? Love to hear it! Leave a 👍 on suggestions you like - it helps me pick what comes next.
+
+  - type: textarea
+    id: idea
+    attributes:
+      label: Your idea
+      description: What should be added or changed?
+    validations:
+      required: true
+
+  - type: textarea
+    id: why
+    attributes:
+      label: Why would it be cool?
+      description: How would it make playing with spaxers better?
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: Anything else
+      description: Sketches, screenshots, references to other mods - whatever helps explain it.
+
+  - type: input
+    id: version
+    attributes:
+      label: Which Minecraft version do you play on?
+      description: Optional, but it helps me know where people want it.
+      placeholder: "1.21.1 NeoForge"

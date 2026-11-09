@@ -1,0 +1,94 @@
+name: 🐛 Bug report
+description: Something broke, crashed or doesn't work like it should
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report this! The more you fill in, the faster it gets fixed.
+
+  - type: dropdown
+    id: minecraft
+    attributes:
+      label: Minecraft version
+      options:
+        - "26.3"
+        - "26.2"
+        - "26.1.2"
+        - "1.21.8"
+        - "1.21.4"
+        - "1.21.1"
+        - "1.20.6"
+        - "1.20.4"
+        - "1.20.1"
+        - "1.19.4"
+        - "1.19.2"
+        - "1.18.2"
+        - "1.17.1"
+        - "1.16.5"
+        - "1.12.2"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: loader
+    attributes:
+      label: Loader
+      options:
+        - NeoForge
+        - Forge
+        - Fabric
+    validations:
+      required: true
+
+  - type: input
+    id: mod-version
+    attributes:
+      label: Spaxers version
+      description: Shown in the mod list, or in the jar's name (for example 2.3)
+      placeholder: "2.3"
+    validations:
+      required: true
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What went wrong, and what did you expect instead?
+      placeholder: "When I fuse a hammer, a double axe and a spade, ..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: How can I make it happen too?
+      description: Step by step, if you know how.
+      placeholder: |
+        1. Install all four 3x3 mods
+        2. Craft a spaxer from three iron tools
+        3. ...
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Crash report or log
+      description: Paste it here or drop an [mclo.gs](https://mclo.gs) link. Crash reports are in `.minecraft/crash-reports/`, everything else in `.minecraft/logs/latest.log`.
+      render: shell
+
+  - type: textarea
+    id: other-mods
+    attributes:
+      label: Other mods
+      description: Playing in a modpack or with other mods? Name the pack, or list the mods that might be involved.
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before posting
+      options:
+        - label: I'm on the newest Spaxers version for my Minecraft version
+          required: true
+        - label: I looked through the open issues and this isn't reported yet
+          required: true

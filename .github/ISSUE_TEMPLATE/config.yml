@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 Questions & chat on Discord
+    url: https://discord.gg/tP9PZvUNjW
+    about: Just have a question? Discord is the fastest way to reach me.
+  - name: ⬇️ Download on CurseForge
+    url: https://www.curseforge.com/minecraft/mc-mods/tools-extension
+    about: Get the newest version of Spaxers 3x3!
+  - name: ⬇️ Download on Modrinth
+    url: https://modrinth.com/mod/spaxers-3x3
+    about: Get the newest version of Spaxers 3x3!
